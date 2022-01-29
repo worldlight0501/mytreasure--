@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <style>
+         .container {
+           width: 80%;
+           height: 80%;
+           text-align: center;
+         }
+         #img {
+           width: 100%;
+           height: 100%;
+         }
+       </style>
+  </head>
+  <body>
+    <div class="container">
+         <img id="img1" src="도깨비불 개화전.jpg" />
+         <img id="img2" src="비스트 개화전.jpg" />
+         <img id="img3" src="투더문 개화전.jpg" />
+         <button onclick="toggleImg()">Turn on the light</button>
+       </div>
+       <script>
+           function toggleImg() {
+             document.getElementById("img1").src = "도깨비불 개화후.jpg";
+              document.getElementById("img2").src = "비스트 개화후.jpg";
+              document.getElementById("img3").src = "투더문 개화후.jpg";
+           }
+         </script>
+  </body>
+</html>
